@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lopes Consultoria | Consultoria Contábil para Gestão Pública</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .brand-red {
+            color: #dc031a;
+        }
+        
+        .bg-brand-red {
+            background-color: #dc031a;
+        }
+        
+        .brand-blue {
+            color: #000343;
+        }
+        
+        .bg-brand-blue {
+            background-color: #000343;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #000343 0%, #dc031a 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .client-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="flex items-center">
+                            <img src="assets/LOPES CONSULTORIA.png" alt="Lopes Consultoria Logo" style="width: 150px; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#inicio" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Sobre</a>
+                    <a href="#clientes" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Clientes</a>
+                    <a href="#contato" class="bg-brand-red text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition">Contato</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-brand-red focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Início</a>
+                <a href="#servicos" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Serviços</a>
+                <a href="#sobre" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+                <a href="#clientes" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Clientes</a>
+                <a href="#contato" class="bg-brand-red text-white block px-3 py-2 rounded-md text-base font-medium">Contato</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Excelência em Consultoria Contábil para Gestão Pública</h1>
+                    <p class="text-xl mb-8">Soluções especializadas para municípios e câmaras municipais com transparência e eficiência.</p>
+                    <a href="#contato" class="bg-brand-red text-brand-red px-8 py-4 rounded-md text-lg font-bold hover:bg-red-700 transition duration-300 inline-block">Fale conosco</a>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Contabilidade Pública" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-landmark text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Contabilidade Pública</h3>
+                    <p class="text-gray-600 text-center">Gestão contábil completa para municípios e câmaras municipais, garantindo conformidade com as normas legais.</p>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Tributação Municipal</h3>
+                    <p class="text-gray-600 text-center">Otimização da arrecadação tributária municipal com assessoria na legislação aplicável.</p>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Prestação de Contas</h3>
+                    <p class="text-gray-600 text-center">Elaboração e acompanhamento de prestações de contas anuais junto aos órgãos de controle.</p>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Planejamento Financeiro</h3>
+                    <p class="text-gray-600 text-center">Elaboração de planejamento financeiro estratégico para os exercícios seguintes.</p>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-balance-scale text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Assessoria Jurídica</h3>
+                    <p class="text-gray-600 text-center">Suporte em questões jurídicas relacionadas à área contábil e fiscal da administração pública.</p>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
+                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Treinamentos</h3>
+                    <p class="text-gray-600 text-center">Capacitação de servidores públicos nas áreas contábil, financeira e fiscal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Marcos Lopes" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 brand-blue">Marcos Lopes</h2>
+                    <div class="w-20 h-1 bg-brand-red mb-6"></div>
+                    <p class="text-gray-600 mb-4">Contador público com mais de 15 anos de experiência em gestão contábil municipal, especialista em finanças públicas e legislação aplicada aos entes municipais.</p>
+                    <p class="text-gray-600 mb-4">Formado pela Universidade Federal da Bahia (UFBA), pós-graduado em Contabilidade Pública e Controladoria Governamental pela Universidade Estácio de Sá.</p>
+                    <p class="text-gray-600 mb-6">Atuo prestando consultoria especializada para municípios da região, buscando sempre a excelência no atendimento e soluções personalizadas para cada cliente.</p>
+                    
+                    <div class="bg-brand-blue text-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Missão da Lopes Consultoria</h3>
+                        <p>Oferecer soluções contábeis especializadas para a gestão pública com ética, transparência e compromisso, contribuindo para a eficiência da administração municipal e o fortalecimento das finanças públicas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clients Section -->
+    <section id="clientes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossos Clientes</h2>
+                <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Temos o orgulho de prestar serviços para os seguintes municípios e câmaras municipais:</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Prefeitura Municipal de Itarantim</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Prefeitura Municipal de Barra da Estiva</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Prefeitura Municipal de Tanhaçu</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Prefeitura Municipal de Ituaçu</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Prefeitura Municipal de Guajeru</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Câmara Municipal de Barra da Estiva</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Câmara Municipal de Ituaçu</h4>
+                    </div>
+                </div>
+                
+                <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <h4 class="font-semibold brand-blue">Câmara Municipal de Contendas do Sincorá</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-brand-red text-white px-6 py-3 rounded-md font-medium hover:bg-red-700 transition duration-300 w-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <h3 class="text-2xl font-bold mb-6 brand-blue">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-brand-blue text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1 brand-blue">Endereço</h4>
+                                    <p class="text-gray-600">Rua Arthur Seixas, nº 90, Sala 302, Candeias<br>Vitória da Conquista - BA</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-brand-blue text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1 brand-blue">Email</h4>
+                                    <p class="text-gray-600">contabilidade@lopesconsultoria.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-brand-blue text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1 brand-blue">Telefone</h4>
+                                    <p class="text-gray-600">(77) 3025-3131</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-brand-blue text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1 brand-blue">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 08h às 12h e das 14h às 18h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold mb-4 brand-blue">Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/lopesconsultoria.ba" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/lopesconsultoriagestao/" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/557730253131" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/LOPES CONSULTORIA_logobranca.png" alt="Lopes Consultoria Logo" style="width: 150px; height: auto;">
+                    </div>
+                    <p class="text-gray-300">Excelência em consultoria contábil para gestão pública, com profissionalismo, ética e compromisso.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-white transition">Início</a></li>
+                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition">Serviços</a></li>
+                        <li><a href="#sobre" class="text-gray-300 hover:text-white transition">Sobre</a></li>
+                        <li><a href="#clientes" class="text-gray-300 hover:text-white transition">Clientes</a></li>
+                        <li><a href="#contato" class="text-gray-300 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Contabilidade Pública</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Tributação Municipal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Prestação de Contas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Planejamento Financeiro</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Assessoria Jurídica</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contato</h4>
+                    <address class="not-italic text-gray-300">
+                        <p class="mb-2">Av. Artur Seixas, 90 - Sala 302</p>
+                        <p class="mb-2">Vitória da Conquista - BA</p>
+                        <p class="mb-2">contabilidade@lopesconsultoria.com.br</p>
+                        <p>(77) 3025-3131</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">© 2025 Lopes Consultoria. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/lopesconsultoria.ba" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lopesconsultoriagestao/" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/557730253131" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-brand-red text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    // Inicializando o EmailJS com o seu User ID
+    // Inicializando o EmailJS com o seu User ID
+(function(){
+    emailjs.init("F55VGS2_54MMBBuhT"); // Substituído pelo seu User ID
+})();
+
+// Seletor do formulário
+const contactForm = document.getElementById('contactForm');
+
+// Envio do formulário
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Envia o formulário usando EmailJS
+    emailjs.sendForm("service_5vxjoz8", "template_3r3mjjk", contactForm)
+        .then(function(response) {
+            alert("Obrigado! Sua mensagem foi enviada com sucesso.");
+            contactForm.reset(); // Limpa o formulário
+        }, function(error) {
+            console.error("Erro ao enviar:", error); // Logar o erro no console
+            alert("Houve um erro ao enviar sua mensagem. Tente novamente.");
+        });
+});
+
+// Verificação de rolagem para o botão "Voltar ao topo"
+const backToTopButton = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+    } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+    }
+});
+
+// Rolagem suave para links de âncoras
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>
