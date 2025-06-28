@@ -6,50 +6,8 @@
     <title>Lopes Consultoria | Consultoria Contábil para Gestão Pública</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .brand-red {
-            color: #dc031a;
-        }
-        
-        .bg-brand-red {
-            background-color: #dc031a;
-        }
-        
-        .brand-blue {
-            color: #000343;
-        }
-        
-        .bg-brand-blue {
-            background-color: #000343;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #000343 0%, #dc031a 100%);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .client-logo {
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s ease;
-        }
-        
-        .client-logo:hover {
-            filter: grayscale(0);
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon1.ico" size="100x200" type="image/x-icon">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -68,6 +26,7 @@
                     <a href="#servicos" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Serviços</a>
                     <a href="#sobre" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Sobre</a>
                     <a href="#clientes" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Clientes</a>
+                    <a href="#equipe" class="text-gray-900 hover:text-brand-red px-3 py-2 text-sm font-medium">Equipe</a>
                     <a href="#contato" class="bg-brand-red text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition">Contato</a>
                 </div>
                 <div class="-mr-2 flex items-center md:hidden">
@@ -86,6 +45,7 @@
                 <a href="#servicos" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Serviços</a>
                 <a href="#sobre" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
                 <a href="#clientes" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Clientes</a>
+                <a href="#equipe" class="text-gray-900 hover:bg-brand-red hover:text-white block px-3 py-2 rounded-md text-base font-medium">Equipe</a>
                 <a href="#contato" class="bg-brand-red text-white block px-3 py-2 rounded-md text-base font-medium">Contato</a>
             </div>
         </div>
@@ -108,79 +68,108 @@
     </section>
     
     <!-- Services Section -->
-    <section id="servicos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossos Serviços</h2>
-                <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+<section id="servicos" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossos Serviços</h2>
+            <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div id="contabilidade" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-landmark text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Contabilidade Pública</h3>
+                <p class="text-gray-600 text-center">Gestão contábil completa para municípios e câmaras municipais, garantindo conformidade com as normas legais.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>Este serviço envolve a execução de atividades contábeis dentro da administração pública, conforme estabelecido na Lei nº 4.320/1964, que regula a contabilidade pública no Brasil. As atividades incluem a preparação e análise de balancetes, demonstrações contábeis anuais (como o Balanço Patrimonial), e a execução de auditorias contábeis para garantir a conformidade com a Lei de Responsabilidade Fiscal (LRF) e as Normas Brasileiras de Contabilidade Aplicadas ao Setor Público (NBCASP). O objetivo é assegurar que os recursos públicos sejam utilizados de maneira eficiente, transparente e em conformidade com a legislação vigente.</p>
+                </div>
             </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-landmark text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Contabilidade Pública</h3>
-                    <p class="text-gray-600 text-center">Gestão contábil completa para municípios e câmaras municipais, garantindo conformidade com as normas legais.</p>
+
+            <!-- Card 2 -->
+            <div id="tributacao" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-hand-holding-usd text-2xl"></i>
                 </div>
-                
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-hand-holding-usd text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Tributação Municipal</h3>
-                    <p class="text-gray-600 text-center">Otimização da arrecadação tributária municipal com assessoria na legislação aplicável.</p>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Tributação Municipal</h3>
+                <p class="text-gray-600 text-center">Otimização da arrecadação tributária municipal com assessoria na legislação aplicável.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>O serviço de tributação municipal oferece consultoria para a implementação e o monitoramento de políticas fiscais eficientes, alinhadas à legislação federal e municipal. A contabilidade tributária envolve a correta classificação, registro e lançamento dos tributos municipais, como o Imposto Predial e Territorial Urbano (IPTU), Imposto Sobre Serviços de Qualquer Natureza (ISSQN) e taxas de licenciamento e fiscalização. Além disso, abordamos a aplicação das normas previstas no Código Tributário Nacional (CTN) e na Constituição Federal de 1988, assegurando a correta arrecadação e evitando passivos fiscais.</p>
                 </div>
-                
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Prestação de Contas</h3>
-                    <p class="text-gray-600 text-center">Elaboração e acompanhamento de prestações de contas anuais junto aos órgãos de controle.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="prestacao" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-file-invoice-dollar text-2xl"></i>
                 </div>
-                
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-chart-line text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Planejamento Financeiro</h3>
-                    <p class="text-gray-600 text-center">Elaboração de planejamento financeiro estratégico para os exercícios seguintes.</p>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Prestação de Contas</h3>
+                <p class="text-gray-600 text-center">Elaboração e acompanhamento de prestações de contas anuais junto aos órgãos de controle.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>A prestação de contas é um processo formal e legal que visa à transparência na aplicação dos recursos públicos. O serviço inclui a elaboração de relatórios anuais detalhados, que são submetidos aos órgãos de controle, como Tribunais de Contas e Ministério Público. A conformidade com a Lei nº 4.320/1964 e a Lei de Responsabilidade Fiscal (LRF) é fundamental para garantir que os recursos públicos sejam utilizados de forma eficiente e dentro da legalidade. As demonstrações financeiras incluem o Balanço Patrimonial, a Demonstração das Variações Patrimoniais, e a Demonstração das Mudanças no Patrimônio Líquido, sendo todos preparados com base em normas contábeis do setor público.</p>
                 </div>
-                
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-balance-scale text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Assessoria Jurídica</h3>
-                    <p class="text-gray-600 text-center">Suporte em questões jurídicas relacionadas à área contábil e fiscal da administração pública.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div id="planejamento" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-chart-line text-2xl"></i>
                 </div>
-                
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300">
-                    <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-users text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-center brand-blue">Treinamentos</h3>
-                    <p class="text-gray-600 text-center">Capacitação de servidores públicos nas áreas contábil, financeira e fiscal.</p>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Planejamento Financeiro</h3>
+                <p class="text-gray-600 text-center">Elaboração de planejamento financeiro estratégico para os exercícios seguintes.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>O planejamento financeiro no setor público envolve a projeção de receitas e despesas para os próximos exercícios financeiros, com base em dados históricos, projeções econômicas e metas fiscais. A Lei de Responsabilidade Fiscal (LRF) exige a elaboração de um planejamento adequado para garantir que os gastos públicos estejam dentro dos limites da arrecadação, promovendo a sustentabilidade fiscal. Este serviço também abrange a criação de planos de contingência e estratégias de gestão de dívidas públicas, assegurando que as finanças públicas sejam mantidas equilibradas e dentro das metas fiscais estabelecidas.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div id="assessoria" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-balance-scale text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Assessoria Jurídica</h3>
+                <p class="text-gray-600 text-center">Suporte em questões jurídicas relacionadas à área contábil e fiscal da administração pública.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>A assessoria jurídica na área contábil e fiscal busca garantir que todas as operações e transações realizadas pela administração pública estejam em conformidade com a legislação vigente. Isso inclui a interpretação das normas fiscais e contábeis, bem como o acompanhamento de processos administrativos e judiciais relacionados ao uso de recursos públicos. O serviço também cobre a análise e a defesa em eventuais processos envolvendo irregularidades fiscais ou contábeis, sempre com base na Constituição Federal e em outras legislações aplicáveis, como o Código Tributário Nacional (CTN) e as leis de licitações e contratos.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div id="treinamento" class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-300 cursor-pointer service-card-item">
+                <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <i class="fas fa-users text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center brand-blue">Treinamentos</h3>
+                <p class="text-gray-600 text-center">Capacitação de servidores públicos nas áreas contábil, financeira e fiscal.</p>
+                <!-- Detalhes adicionais -->
+                <div class="service-details hidden mt-4 text-gray-600">
+                    <p>O treinamento visa aprimorar as habilidades dos servidores públicos na gestão contábil e fiscal, com foco na correta aplicação das normas contábeis, execução orçamentária e fiscal, e conformidade com a Lei de Responsabilidade Fiscal (LRF). Os cursos cobrem temas como elaboração de orçamentos, planejamento financeiro público, controle interno e auditoria, garantindo que os servidores possam realizar suas funções com eficiência e dentro das normas legais. Os programas são desenvolvidos para atender às necessidades específicas de cada município ou câmara municipal.</p>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
+
     <!-- About Section -->
-    <section id="sobre" class="py-20 bg-gray-50">
+    <section id="sobre" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Marcos Lopes" class="rounded-lg shadow-xl">
+                    <img src="assets/Edificio kinzai.jpeg" alt="Lopes Consultoria" class="rounded-lg shadow-xl">
                 </div>
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 brand-blue">Marcos Lopes</h2>
-                    <div class="w-20 h-1 bg-brand-red mb-6"></div>
-                    <p class="text-gray-600 mb-4">Contador público com mais de 15 anos de experiência em gestão contábil municipal, especialista em finanças públicas e legislação aplicada aos entes municipais.</p>
-                    <p class="text-gray-600 mb-4">Formado pela Universidade Federal da Bahia (UFBA), pós-graduado em Contabilidade Pública e Controladoria Governamental pela Universidade Estácio de Sá.</p>
-                    <p class="text-gray-600 mb-6">Atuo prestando consultoria especializada para municípios da região, buscando sempre a excelência no atendimento e soluções personalizadas para cada cliente.</p>
-                    
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 brand-blue">Lopes Consultoria</h2>
+                        <div class="w-20 h-1 bg-brand-red mb-6"></div>
+                        <p class="text-gray-600 mb-4">A Lopes Consultoria é especializada em soluções contábeis para a gestão pública, com mais de 15 anos de experiência em assessoria para municípios e câmaras municipais.</p>
+                        <p class="text-gray-600 mb-4">Nosso time é composto por profissionais altamente capacitados, com conhecimento aprofundado em finanças públicas e legislação municipal.</p>
+                        <p class="text-gray-600 mb-6">Buscamos sempre a excelência em nossos serviços, oferecendo soluções personalizadas para otimizar a gestão pública e garantir a conformidade com as normas fiscais e contábeis.</p>
                     <div class="bg-brand-blue text-white p-6 rounded-lg">
                         <h3 class="text-xl font-bold mb-4">Missão da Lopes Consultoria</h3>
                         <p>Oferecer soluções contábeis especializadas para a gestão pública com ética, transparência e compromisso, contribuindo para a eficiência da administração municipal e o fortalecimento das finanças públicas.</p>
@@ -191,19 +180,19 @@
     </section>
     
     <!-- Clients Section -->
-    <section id="clientes" class="py-20 bg-white">
+    <section id="clientes" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossos Clientes</h2>
                 <div class="w-20 h-1 bg-brand-red mx-auto"></div>
-                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Temos o orgulho de prestar serviços para os seguintes municípios e câmaras municipais:</p>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Temos o orgulho de ter prestado serviços para os seguintes municípios e câmaras municipais:</p>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-city"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_Itarantim-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Prefeitura Municipal de Itarantim</h4>
                     </div>
@@ -211,8 +200,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-city"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_barra_da_estiva-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Prefeitura Municipal de Barra da Estiva</h4>
                     </div>
@@ -220,8 +209,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-city"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_Tanhaçu-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Prefeitura Municipal de Tanhaçu</h4>
                     </div>
@@ -229,8 +218,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-city"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_ituaçu-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Prefeitura Municipal de Ituaçu</h4>
                     </div>
@@ -238,8 +227,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-city"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_Guajeru-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Prefeitura Municipal de Guajeru</h4>
                     </div>
@@ -247,8 +236,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-archway"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_barra_da_estiva-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Câmara Municipal de Barra da Estiva</h4>
                     </div>
@@ -256,8 +245,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-archway"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_ituaçu-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Câmara Municipal de Ituaçu</h4>
                     </div>
@@ -265,8 +254,8 @@
                 
                 <div class="client-logo bg-white p-6 rounded-lg shadow-md flex items-center justify-center">
                     <div class="text-center">
-                        <div class="bg-brand-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <i class="fas fa-archway"></i>
+                        <div class="bg-brand-white text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <img src="assets/Brasão_de_contendas-removebg-preview.png" alt="">
                         </div>
                         <h4 class="font-semibold brand-blue">Câmara Municipal de Contendas do Sincorá</h4>
                     </div>
@@ -274,6 +263,84 @@
             </div>
         </div>
     </section>
+
+    <!-- Team Section -->
+<section id="equipe" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 brand-blue">Nossa Equipe</h2>
+            <div class="w-20 h-1 bg-brand-red mx-auto"></div>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Conheça os membros da nossa equipe de consultoria, com vasta experiência na área de gestão pública e compromisso com a excelência.</p>
+        </div>
+
+        <!-- Membros da Equipe -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Membro 1 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="assets/foto_de_Marcos.jpg" alt="Membro 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Marcos Lopes</h3>
+                <p class="text-gray-600 mb-4">Fundador e CEO - Consultoria e Finanças Públicas</p>
+                <p class="text-gray-600">Marcos tem mais de 15 anos de experiência em contabilidade pública e é especialista na gestão de finanças municipais.</p>
+            </div>
+
+            <!-- Membro 2 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ana Costa</h3>
+                <p class="text-gray-600 mb-4">Gerente de Projetos - Planejamento Estratégico</p>
+                <p class="text-gray-600">Ana é responsável pelo planejamento e implementação de estratégias de consultoria para os clientes da nossa empresa.</p>
+            </div>
+
+            <!-- Membro 3 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">José Silva</h3>
+                <p class="text-gray-600 mb-4">Consultor de Tributação - Especialista em Impostos Municipais</p>
+                <p class="text-gray-600">José é um especialista em legislação tributária municipal e oferece suporte às prefeituras para otimizar a arrecadação fiscal.</p>
+            </div>
+
+            <!-- Membro 4 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Cláudia Souza</h3>
+                <p class="text-gray-600 mb-4">Coordenadora de Compliance - Auditoria e Controle</p>
+                <p class="text-gray-600">Cláudia é responsável pela área de compliance, garantindo que todos os processos atendam às regulamentações legais.</p>
+            </div>
+
+            <!-- Membro 5 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 5" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">João Pereira</h3>
+                <p class="text-gray-600 mb-4">Especialista em Gestão de Recursos Públicos</p>
+                <p class="text-gray-600">João tem uma vasta experiência em alocação eficiente de recursos para administrações municipais.</p>
+            </div>
+
+            <!-- Membro 6 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 6" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Luciana Almeida</h3>
+                <p class="text-gray-600 mb-4">Gestora de Comunicação e Marketing</p>
+                <p class="text-gray-600">Luciana é responsável pela comunicação interna e externa, além de desenvolver campanhas de conscientização para os clientes.</p>
+            </div>
+
+            <!-- Membro 7 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 7" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Carlos Rocha</h3>
+                <p class="text-gray-600 mb-4">Analista de Dados - Gestão e Processamento de Informações</p>
+                <p class="text-gray-600">Carlos trabalha com análise de dados e soluções tecnológicas para aprimorar a eficiência nos processos de gestão pública.</p>
+            </div>
+
+            <!-- Membro 8 -->
+            <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://via.placeholder.com/150" alt="Membro 8" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Fernanda Oliveira</h3>
+                <p class="text-gray-600 mb-4">Especialista em Planejamento Orçamentário</p>
+                <p class="text-gray-600">Fernanda é responsável por elaborar os planos orçamentários e contribuir para o planejamento financeiro de projetos públicos.</p>
+            </div>
+        </div>
+    </div>
+</section>
     
     <!-- Contact Section -->
     <section id="contato" class="py-20 bg-gray-50">
@@ -377,118 +444,73 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-brand-blue text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <img src="assets/LOPES CONSULTORIA_logobranca.png" alt="Lopes Consultoria Logo" style="width: 150px; height: auto;">
-                    </div>
-                    <p class="text-gray-300">Excelência em consultoria contábil para gestão pública, com profissionalismo, ética e compromisso.</p>
+<footer class="bg-brand-blue text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div>
+                <div class="flex items-center mb-4">
+                    <img src="assets/LOPES CONSULTORIA_logobranca.png" alt="Lopes Consultoria Logo" style="width: 130px; height: auto;">
                 </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Navegação</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#inicio" class="text-gray-300 hover:text-white transition">Início</a></li>
-                        <li><a href="#servicos" class="text-gray-300 hover:text-white transition">Serviços</a></li>
-                        <li><a href="#sobre" class="text-gray-300 hover:text-white transition">Sobre</a></li>
-                        <li><a href="#clientes" class="text-gray-300 hover:text-white transition">Clientes</a></li>
-                        <li><a href="#contato" class="text-gray-300 hover:text-white transition">Contato</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Contabilidade Pública</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Tributação Municipal</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Prestação de Contas</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Planejamento Financeiro</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Assessoria Jurídica</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Contato</h4>
-                    <address class="not-italic text-gray-300">
-                        <p class="mb-2">Av. Artur Seixas, 90 - Sala 302</p>
-                        <p class="mb-2">Vitória da Conquista - BA</p>
-                        <p class="mb-2">contabilidade@lopesconsultoria.com.br</p>
-                        <p>(77) 3025-3131</p>
-                    </address>
-                </div>
+                <p class="text-gray-300 text-sm">Excelência em consultoria contábil para gestão pública, com profissionalismo, ética e compromisso.</p>
             </div>
             
-            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-300 mb-4 md:mb-0">© 2025 Lopes Consultoria. Todos os direitos reservados.</p>
-                <div class="flex space-x-6">
-                    <a href="https://www.facebook.com/lopesconsultoria.ba" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/lopesconsultoriagestao/" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/557730253131" class="bg-brand-blue text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
+            <div>
+                <h4 class="text-lg font-bold mb-3">Navegação</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#inicio" class="text-gray-300 hover:text-white transition">Início</a></li>
+                    <li><a href="#servicos" class="text-gray-300 hover:text-white transition">Serviços</a></li>
+                    <li><a href="#sobre" class="text-gray-300 hover:text-white transition">Sobre</a></li>
+                    <li><a href="#clientes" class="text-gray-300 hover:text-white transition">Clientes</a></li>
+                    <li><a href="#equipe" class="text-gray-300 hover:text-white transition">Equipe</a></li>
+                    <li><a href="#contato" class="text-gray-300 hover:text-white transition">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-3">Serviços</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#contabilidade" class="text-gray-300 hover:text-white transition">Contabilidade Pública</a></li>
+                    <li><a href="#tributacao" class="text-gray-300 hover:text-white transition">Tributação Municipal</a></li>
+                    <li><a href="#prestacao" class="text-gray-300 hover:text-white transition">Prestação de Contas</a></li>
+                    <li><a href="#planejamento" class="text-gray-300 hover:text-white transition">Planejamento Financeiro</a></li>
+                    <li><a href="#assessoria" class="text-gray-300 hover:text-white transition">Assessoria Jurídica</a></li>
+                    <li><a href="#treinamento" class="text-gray-300 hover:text-white transition">Treinamentos</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-3">Contato</h4>
+                <address class="not-italic text-gray-300 text-sm">
+                    <p class="mb-2">Av. Artur Seixas, 90 - Sala 302</p>
+                    <p class="mb-2">Vitória da Conquista - BA</p>
+                    <p class="mb-2">contabilidade@lopesconsultoria.com.br</p>
+                    <p>(77) 3025-3131</p>
+                </address>
             </div>
         </div>
-    </footer>
-    
+        
+        <div class="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-300 text-sm mb-4 md:mb-0">© 2025 Lopes Consultoria. Todos os direitos reservados.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/lopesconsultoria.ba" class="bg-brand-blue text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/lopesconsultoriagestao/" class="bg-brand-blue text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/557730253131" class="bg-brand-blue text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-800 transition" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- Back to Top Button -->
     <button id="backToTop" class="fixed bottom-6 right-6 bg-brand-red text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
         <i class="fas fa-arrow-up"></i>
     </button>
     
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-    // Inicializando o EmailJS com o seu User ID
-    // Inicializando o EmailJS com o seu User ID
-(function(){
-    emailjs.init("F55VGS2_54MMBBuhT"); // Substituído pelo seu User ID
-})();
-
-// Seletor do formulário
-const contactForm = document.getElementById('contactForm');
-
-// Envio do formulário
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    // Envia o formulário usando EmailJS
-    emailjs.sendForm("service_5vxjoz8", "template_3r3mjjk", contactForm)
-        .then(function(response) {
-            alert("Obrigado! Sua mensagem foi enviada com sucesso.");
-            contactForm.reset(); // Limpa o formulário
-        }, function(error) {
-            console.error("Erro ao enviar:", error); // Logar o erro no console
-            alert("Houve um erro ao enviar sua mensagem. Tente novamente.");
-        });
-});
-
-// Verificação de rolagem para o botão "Voltar ao topo"
-const backToTopButton = document.getElementById('backToTop');
-window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-        backToTopButton.classList.remove('opacity-0', 'invisible');
-        backToTopButton.classList.add('opacity-100', 'visible');
-    } else {
-        backToTopButton.classList.remove('opacity-100', 'visible');
-        backToTopButton.classList.add('opacity-0', 'invisible');
-    }
-});
-
-// Rolagem suave para links de âncoras
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+    body {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+        
+    .brand-red {
+        color: #dc031a;
+    }   
+        
+    .bg-brand-red {
+        background-color: #dc031a;
+    }
+        
+    .brand-blue {
+        color: #000343;
+    }
+        
+    .bg-brand-blue {
+        background-color: #000343;
+    }
+        
+    .hero-gradient {
+        background: linear-gradient(135deg, #000343 0%, #dc031a 100%);
+    }
+        
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+        
+    .client-logo {
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: all 0.3s ease;
+    }
+        
+    .client-logo:hover {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    .service-card-item {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card-item.active {
+        transform: scale(1.1);
+    }
+
+    .service-details {
+        display: none;
+    }
+
+    .service-details.show {
+        display: block;
+    }
+    /* Estilo base para os cards */
+.service-card {
+    min-height: 300px; /* Altura mínima para os cards */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-details {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out; /* Transição suave para a expansão do conteúdo */
+    padding: 0 20px;
+}
+
+/* Para os primeiros 3 cards, expandem para cima */
+.service-card:first-child .service-details,
+.service-card:nth-child(2) .service-details,
+.service-card:nth-child(3) .service-details {
+    transform-origin: bottom center; /* Faz com que expanda para cima */
+}
+
+.service-card:first-child.active .service-details,
+.service-card:nth-child(2).active .service-details,
+.service-card:nth-child(3).active .service-details {
+    max-height: 500px; /* Limite para a altura máxima dos detalhes */
+}
+
+/* Para os últimos 3 cards, expandem para baixo */
+.service-card:nth-child(4) .service-details,
+.service-card:nth-child(5) .service-details,
+.service-card:nth-child(6) .service-details {
+    transform-origin: top center; /* Faz com que expanda para baixo */
+}
+
+.service-card:nth-child(4).active .service-details,
+.service-card:nth-child(5).active .service-details,
+.service-card:nth-child(6).active .service-details {
+    max-height: 500px; /* Limite para a altura máxima dos detalhes */
+}
+
+.service-card-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card-item.active {
+    transform: scale(1.05); /* Leve aumento no tamanho do card */
+}
